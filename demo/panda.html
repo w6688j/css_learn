@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panda</title>
+    <style>
+        .container {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin: 300px auto;
+            background-color: #c63D01;
+            box-shadow: 0 0 0 1px #000000,
+            -20px -26px 0 -10px #333333,
+            20px -26px 0 -10px #333333,
+            -36px -40px 0 15px #ffffff,
+            36px -40px 0 15px #ffffff,
+            -36px -40px 0 16px,
+            36px -40px 0 16px,
+            0 55px 0 75px #ffffff,
+            0 55px 0 76px #000000,
+            0 22px 0 120px #08BDEB,
+            0 22px 0 121px #000000;
+        }
+
+        /*鼻子*/
+        .container::before {
+            content: '';
+            position: absolute;
+            bottom: -81px;
+            left: 17px;
+            width: 2px;
+            height: 80px;
+            background-color: #000000;
+        }
+
+        /*嘴巴*/
+        .container::after {
+            content: '';
+            position: absolute;
+            bottom: -83px;
+            left: -44px;
+            width: 125px;
+            height: 70px;
+            border-bottom-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            border-bottom: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
